@@ -14,17 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const spheres = $('a-sphere');
     spheres.forEach(sphere => {
       sphere.setAttribute('color', color);
-      const position = sphere.getAttribute('position');
-      const pos = {
-        x: position.x,
-        y: position.y,
-        z: position.z
-      };
-      const newY = 1 + amplitude * Math.sin(time * frequency);
-      sphere.setAttribute('position', { x: pos.x, y: newY, z: pos.z });
     });
     
-    time++;
     requestAnimationFrame(animate);
   };
 
