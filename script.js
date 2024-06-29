@@ -1,4 +1,4 @@
-$ = (queryString) => document.querySelector(queryString);
+$ = (queryString) => document.querySelectorAll(queryString);
 
 const shiftHue = (hue) => (hue + 1) % 360;
 
