@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const colors = ['#0369C2', '#4DBE46', '#D7DA3F', '#8680C6', 'white', 'black', 'gray', '#F2393D'];
   let colorIndex = 0;
-  const framesPerColor = 60; // Number of frames to display each color
+  const framesPerColor = 140; 
   let frameCounter = 0;
 
   const animate = () => {
