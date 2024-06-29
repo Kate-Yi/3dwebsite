@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     spheres.forEach(sphere => {
       sphere.setAttribute('color', color);
       const position = sphere.getAttribute('position');
-      const newY = position.y + amplitude * Math.sin(time * frequency);
+      const pos = position.split(' ');
+      const newY = 1 + amplitude * Math.sin(time * frequency);
       sphere.setAttribute('position', `${pos[0]} ${newY} ${pos[2]}`);
     });
     time++;
