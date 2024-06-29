@@ -8,23 +8,21 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   
   <body>
-    <a-scene physics="debug: true">
-        <a-entity camera look-controls></a-entity>
+    <a-scene>
         <a-entity environment="preset: contact; skyType: gradient; skyColor: #A865B5; horizonColor: #BAE0F3; ground: hills; groundColor: #9B6B43; grid: none"></a-entity>
-        <a-sphere dynamic-body color="pink" position="0 1 0"></a-sphere>
-        <a-sphere dynamic-body color="brown" position="0 1 4"></a-sphere>
-        <a-sphere dynamic-body color="#0369C2" position="8 1 0"></a-sphere>
-        <a-sphere dynamic-body color="#4DBE46" position="0 1 8"></a-sphere>
-        <a-sphere dynamic-body color="#D7DA3F" position="4 1 0"></a-sphere>
-        <a-sphere dynamic-body color="#8680C6" position="4 1 4"></a-sphere>
-        <a-sphere dynamic-body color="orange" position="8 1 4"></a-sphere>
-        <a-sphere dynamic-body color="gray" position="4 1 8"></a-sphere>
-        <a-sphere dynamic-body color="#F2393D" position="8 1 8"></a-sphere>
+        <a-sphere color="pink" position="0 1 0"></a-sphere>
+        <a-sphere color="brown" position="0 1 4"></a-sphere>
+        <a-sphere color="#0369C2" position="8 1 0"></a-sphere>
+        <a-sphere color="#4DBE46" position="0 1 8"></a-sphere>
+        <a-sphere color="#D7DA3F" position="4 1 0"></a-sphere>
+        <a-sphere color="#8680C6" position="4 1 4"></a-sphere>
+        <a-sphere color="orange" position="8 1 4"></a-sphere>
+        <a-sphere color="gray" position="4 1 8"></a-sphere>
+        <a-sphere color="#F2393D" position="8 1 8"></a-sphere>
       <!-- idea is to figure out how to make a scene from Inside Out where they have the wall of memories -->
       <!-- colour palette taken from https://www.instagram.com/orixcreative/p/CWDelrcP3hd/?img_index=1 -->
     </a-scene>
